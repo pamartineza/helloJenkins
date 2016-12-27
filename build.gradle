@@ -49,5 +49,6 @@ sonarqube {
         property "sonar.branch", branch
         property "sonar.sourceEncoding", "UTF-8"
         property "sonar.scm.provider", "git"
+        property "sonar.java.coveragePlugin", "jacoco"
     }
 }

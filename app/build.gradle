@@ -9,6 +9,7 @@ buildscript {
     dependencies {
         classpath 'com.github.ben-manes:gradle-versions-plugin:0.13.0'
         classpath 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:0.6.1'
+        classpath 'com.dicedmelon.gradle:jacoco-android:0.1.1'
     }
 }
 
@@ -16,6 +17,8 @@ buildscript {
 apply plugin: 'com.github.ben-manes.versions'
 //Method count
 apply plugin: 'com.getkeepsafe.dexcount'
+//Code Coverage
+apply plugin: 'jacoco-android'
 
 android {
     compileSdkVersion 25
