@@ -12,6 +12,10 @@ buildscript {
     }
 }
 
+plugins {
+    id "org.sonarqube" version "2.2.1"
+}
+
 allprojects {
     repositories {
         jcenter()
@@ -20,4 +24,29 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+sonarqube {
+    properties {
+
+        def jenkinsJobName = System.getenv('JOB_NAME')
+        def jenkinsJobBuild = System.getenv('BUILD_NUMBER')
+
+        def projectVersion = "nonJenkinsBuild_1.0"
+        def projectName = "HelloJenkins"
+        def projectKey = "hellojenkins:hellojenkins"
+        def branch = "master"
+
+        if (jenkinsJobName && jenkinsJobBuild) {
+            projectVersion = jenkinsJobName + '_' + jenkinsJobBuild
+        }
+
+        property "sonar.host.url", "http://localhost:9000"
+        property "sonar.projectKey", projectKey // some shortcut name
+        property "sonar.projectName", projectName
+        property "sonar.projectVersion", projectVersion
+        property "sonar.branch", branch
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.scm.provider", "git"
+    }
 }
