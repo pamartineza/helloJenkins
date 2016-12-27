@@ -22,5 +22,6 @@ public class ExampleInstrumentedTest {
         Context appContext = InstrumentationRegistry.getTargetContext();
 
         assertEquals("com.greenlionsoft.hellojenkins.debug", appContext.getPackageName());
+
     }
 }
