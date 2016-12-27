@@ -38,6 +38,7 @@ sonarqube {
         def branch = "master"
 
         if (jenkinsJobName && jenkinsJobBuild) {
+            jenkinsJobName = jenkinsJobName.replace(" ", "_")
             projectVersion = jenkinsJobName + '_' + jenkinsJobBuild
         }
 
