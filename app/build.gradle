@@ -36,6 +36,12 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+
+        debug {
+            minifyEnabled false
+            applicationIdSuffix = ".debug"
+            versionNameSuffix = "-DEBUG"
+        }
     }
 }
 
@@ -60,5 +66,11 @@ dependencyUpdates.resolutionStrategy = {
                 selection.reject('Release candidate')
             }
         }
+    }
+}
+
+sonarqube {
+    properties {
+        property "sonar.jacoco.reportPath", "build/jacoco/testDebugUnitTest.exec"
     }
 }
