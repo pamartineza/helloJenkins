@@ -2,12 +2,12 @@
 
 This is an Android multi-module demo app to verify the proper configuration of a Jenkins CI server and a SonarQube Server, should work straightforward if your sonarQube server is at localhost:9000
 
-I have wrote an extensive Medium article explaining how to configure Ubuntu + Jenkins + Sonarqube for Android development, you can find it here -> https://medium.com
+I have wrote an extensive Medium article explaining how to configure Ubuntu + Jenkins + Sonarqube for Android development, you can find it here -> https://medium.com/@pamartineza/how-to-set-up-a-continuous-integration-server-for-android-development-ubuntu-jenkins-sonarqube-43c1ed6b08d3
 
 
 ###How to configure JaCoCo Coverage:
 
-In your app module add the **Jacoco-android-gradle-plugin** https://github.com/arturdm/jacoco-android-gradle-plugin
+In your **app** module add the **Jacoco-android-gradle-plugin** https://github.com/arturdm/jacoco-android-gradle-plugin
 
 ```groovy
 buildscript {
@@ -38,11 +38,19 @@ jacoco {
 }
 ```
 
+In your parent build.gradle add:
+
+```groovy
+ext {
+    jacocoVersion = '0.7.8'
+}
+```
+
 
 
 ###How to configure sonarQube:
 
-In your parent **build.gradle** add this line
+In your parent **build.gradle** add these lines
 
 ```groovy
 plugins {
@@ -91,4 +99,5 @@ sonarqube {
 }
 ```
 
+Nothing is required in java modules.
 
