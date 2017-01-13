@@ -1,0 +1,13 @@
+nexus5X-device:
+  type: instrumentation
+  timeout: 10m
+  device-ids: nexus5x
+  os-version-ids: [21, 25]
+  locales: en
+
+lgG4-device:
+  type: instrumentation
+  timeout: 10m
+  device-ids: p1
+  os-version-ids: 22
+  locales: en
