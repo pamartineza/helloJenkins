@@ -1,8 +1,8 @@
-nexus5X-device:
+nexus5-device:
   type: instrumentation
   timeout: 10m
-  device-ids: nexus5X
-  os-version-ids: [21, 25]
+  device-ids: hammerhead
+  os-version-ids: [19, 23]
   locales: en
 
 lgG4-device:
