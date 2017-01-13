@@ -48,22 +48,15 @@ android {
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
 
-            def jenkinsJobName = System.getenv('JOB_NAME')
             def jenkinsJobBuild = System.getenv('BUILD_NUMBER')
 
-            if (jenkinsJobName) {
+            if (jenkinsJobBuild) {
                 //Jenkins build
-                def date = new Date();
-                def formattedDate = date.format('yyyyMMdd_HHmm')
 
                 output.outputFile = new File(output.outputFile.parent,
                         output.outputFile.name.replace(".apk",
-                                "_Hello_Jenkins_JN"
-                                        + jenkinsJobName + "_JB"
-                                        + jenkinsJobBuild + "_"
-                                        + formattedDate + "_VC"
-                                        + defaultConfig.versionCode + "_"
-                                        + defaultConfig.versionName + "_"
+                                "_Hello_Jenkins_JB"
+                                        + jenkinsJobBuild
                                         + ".apk"))
 
             } else {
