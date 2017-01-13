@@ -45,27 +45,6 @@ android {
         }
     }
 
-    applicationVariants.all { variant ->
-        variant.outputs.each { output ->
-
-            def jenkinsJobBuild = System.getenv('BUILD_NUMBER')
-
-            if (jenkinsJobBuild) {
-                //Jenkins build
-
-                output.outputFile = new File(output.outputFile.parent,
-                        output.outputFile.name.replace(".apk",
-                                "_Hello_Jenkins_JB"
-                                        + jenkinsJobBuild
-                                        + ".apk"))
-
-            } else {
-                //Android Studio or local build
-                output.outputFile = new File(output.outputFile.parent,
-                        output.outputFile.name.replace(".apk", "_Hello_Jenkins_VC" + defaultConfig.versionCode + "_" + defaultConfig.versionName + "_" + ".apk"))
-            }
-        }
-    }
 }
 
 dependencies {
