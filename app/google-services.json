@@ -49,6 +49,37 @@
           "status": 2
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255008250548:android:eb266f1f8a9a4956",
+        "android_client_info": {
+          "package_name": "com.greenlionsoft.hellojenkins"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255008250548-cp16gqo31u4lulhll4ms108erf2lpmq9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUXBJLXOwUtY2zF_9_-UfPG3oCo7hYooo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
     }
   ],
   "configuration_version": "1"
