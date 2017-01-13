@@ -31,6 +31,7 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -41,6 +42,35 @@ android {
             minifyEnabled false
             applicationIdSuffix = ".debug"
             versionNameSuffix = "-DEBUG"
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+
+            def jenkinsJobName = System.getenv('JOB_NAME')
+            def jenkinsJobBuild = System.getenv('BUILD_NUMBER')
+
+            if (jenkinsJobName) {
+                //Jenkins build
+                def date = new Date();
+                def formattedDate = date.format('yyyyMMdd_HHmm')
+
+                output.outputFile = new File(output.outputFile.parent,
+                        output.outputFile.name.replace(".apk",
+                                "_Hello_Jenkins_"
+                                        + jenkinsJobName + "_"
+                                        + jenkinsJobBuild + "_"
+                                        + formattedDate + "_VC"
+                                        + defaultConfig.versionCode + "_"
+                                        + defaultConfig.versionName + "_"
+                                        + ".apk"))
+
+            } else {
+                //Android Studio or local build
+                output.outputFile = new File(output.outputFile.parent,
+                        output.outputFile.name.replace(".apk", "_Hello_Jenkins_VC" + defaultConfig.versionCode + "_" + defaultConfig.versionName + "_" + ".apk"))
+            }
         }
     }
 }
