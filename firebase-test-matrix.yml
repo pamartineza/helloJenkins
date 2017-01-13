@@ -1,7 +1,7 @@
 nexus5X-device:
   type: instrumentation
   timeout: 10m
-  device-ids: nexus5x
+  device-ids: nexus5X
   os-version-ids: [21, 25]
   locales: en
 
