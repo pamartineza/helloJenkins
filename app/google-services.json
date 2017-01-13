@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "255008250548",
+    "firebase_url": "https://hello-jenkins.firebaseio.com",
+    "project_id": "hello-jenkins",
+    "storage_bucket": "hello-jenkins.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255008250548:android:60548d77ff92c229",
+        "android_client_info": {
+          "package_name": "com.greenlionsoft.hellojenkins.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255008250548-3sppfcd5v86o6kfga8bfo8c2l61an2ih.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.greenlionsoft.hellojenkins.debug",
+            "certificate_hash": "9AB9D487809C4EDB22F7813D9F4DCE1B99776D65"
+          }
+        },
+        {
+          "client_id": "255008250548-cp16gqo31u4lulhll4ms108erf2lpmq9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUXBJLXOwUtY2zF_9_-UfPG3oCo7hYooo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255008250548-cp16gqo31u4lulhll4ms108erf2lpmq9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
