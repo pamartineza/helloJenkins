@@ -11,6 +11,3 @@ lgG4-device:
   device-ids: p1
   os-version-ids: 22
   locales: en
-
-all-devices:
-  include: [nexus5-device, lgG4-device]
