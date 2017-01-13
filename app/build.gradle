@@ -58,8 +58,8 @@ android {
 
                 output.outputFile = new File(output.outputFile.parent,
                         output.outputFile.name.replace(".apk",
-                                "_Hello_Jenkins_"
-                                        + jenkinsJobName + "_"
+                                "_Hello_Jenkins_JN"
+                                        + jenkinsJobName + "_JB"
                                         + jenkinsJobBuild + "_"
                                         + formattedDate + "_VC"
                                         + defaultConfig.versionCode + "_"
