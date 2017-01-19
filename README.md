@@ -5,7 +5,7 @@ This is an Android multi-module demo app to verify the proper configuration of a
 I have wrote two extensive Medium articles explaining:
 * [How to configure Ubuntu + Jenkins + Sonarqube for Android development](https://medium.com/@pamartineza/how-to-set-up-a-continuous-integration-server-for-android-development-ubuntu-jenkins-sonarqube-43c1ed6b08d3)
 
-* [how to run Android Tests on cloud devices using a Jenkins CI server Firebase Test Lab — Amazon Device Farm — Genymotion Cloud](https://medium.com/@pamartineza/running-android-tests-on-cloud-devices-using-a-jenkins-ci-server-firebase-test-lab-amazon-device-b67cb4b16c40#.6055mdnuq)
+* [How to run Android Tests on cloud devices using a Jenkins CI server Firebase Test Lab — Amazon Device Farm — Genymotion Cloud](https://medium.com/@pamartineza/running-android-tests-on-cloud-devices-using-a-jenkins-ci-server-firebase-test-lab-amazon-device-b67cb4b16c40#.6055mdnuq)
 
 
 ###How to configure JaCoCo Coverage in your apps:
