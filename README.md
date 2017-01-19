@@ -108,5 +108,7 @@ Nothing is required in java modules.
 #Cloud testing
 
 If you want to test Firebase Test Lab integration checkout "feature/fireTestLab" branch.
+
 If you want to test Genumotion Cloud integration please checkout "feature/genymotion" branch.
+
 Amazon Device Farm doesn't require any project configuration
