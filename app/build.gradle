@@ -88,6 +88,11 @@ jacoco {
 }
 
 genymotion {
+
+    config {
+        genymotionPath = "/opt/genymobile/genymotion/"
+    }
+
     cloudDevices {
         nexus5 {
             template "Google Nexus 5 - 4.4.4 - API 19 - 1080x1920"
