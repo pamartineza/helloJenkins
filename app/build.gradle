@@ -89,6 +89,7 @@ jacoco {
 
 genymotion {
 
+    //Comment block if you are not running it on Ubuntu or set your path
     config {
         genymotionPath = "/opt/genymobile/genymotion/"
     }
