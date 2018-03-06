@@ -1,4 +1,4 @@
-#Hello Jenkins App
+# Hello Jenkins App
 
 This is an Android multi-module demo app to verify the proper configuration of a Jenkins CI server and a SonarQube Server, should work straightforward if your sonarQube server is at localhost:9000
 
@@ -8,7 +8,7 @@ I have wrote two extensive Medium articles explaining:
 * [How to run Android Tests on cloud devices using a Jenkins CI server Firebase Test Lab — Amazon Device Farm — Genymotion Cloud](https://medium.com/@pamartineza/running-android-tests-on-cloud-devices-using-a-jenkins-ci-server-firebase-test-lab-amazon-device-b67cb4b16c40#.6055mdnuq)
 
 
-###How to configure JaCoCo Coverage in your apps:
+### How to configure JaCoCo Coverage in your apps:
 
 In your **app** module add the **Jacoco-android-gradle-plugin** https://github.com/arturdm/jacoco-android-gradle-plugin
 
@@ -51,7 +51,7 @@ ext {
 
 
 
-###How to configure sonarQube in your apps:
+### How to configure sonarQube in your apps:
 
 In your parent **build.gradle** add these lines
 
@@ -104,7 +104,7 @@ sonarqube {
 
 Nothing is required in java modules.
 
-#Cloud testing
+# Cloud testing
 
 If you want to test Firebase Test Lab integration checkout "feature/fireTestLab" branch.
 
